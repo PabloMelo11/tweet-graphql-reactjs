@@ -1,6 +1,4 @@
-import React, {
-  useState,
-} from 'react';
+import React, { useState } from 'react';
 
 import { FiChevronLeft, FiChevronRight, FiSend } from 'react-icons/fi';
 
@@ -29,13 +27,14 @@ const Home = () => {
         <h1>TweetsQl</h1>
         <h3>
           The new and the fast way to
-          <br />
-          {' '}
-          tweet using Apollo & GraphQl
+          <br /> tweet using Apollo & GraphQl
         </h3>
       </Left>
       <Right>
-        <form onSubmit={handleSubmit} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <form
+          onSubmit={handleSubmit}
+          style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
+        >
           <InputContainer>
             <Input
               placeholder="What's happening?"
@@ -60,17 +59,11 @@ const Home = () => {
         </ProfileList>
 
         <ButtonsContainer>
-          <button
-            type="button"
-            onClick={() => {}}
-          >
+          <button type="button" onClick={() => {}}>
             <FiChevronLeft size={25} color="#55409C" />
             Previous
           </button>
-          <button
-            type="button"
-            onClick={() => {}}
-          >
+          <button type="button" onClick={() => {}}>
             Next
             <FiChevronRight size={25} color="#55409C" />
           </button>
